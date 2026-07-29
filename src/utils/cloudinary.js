@@ -26,3 +26,5 @@ const uploadOnCloudinary = async (localFileUrl) => {
     return null
   }
 }
+
+export default uploadOnCloudinary
