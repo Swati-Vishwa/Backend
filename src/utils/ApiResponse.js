@@ -1,9 +1,9 @@
 // Standardized wrapper for successful API responses
 class ApiResponse {
   constructor(
-    message = "Success!",  // Default success message if none provided
+    statusCode,             // HTTP status code (e.g. 200, 201)
     data,                  // The actual payload being returned to the client
-    statusCode              // HTTP status code (e.g. 200, 201)
+    message = "Success!",  // Default success message if none provided
   ) {
     this.statusCode = statusCode;
     this.data = data;
